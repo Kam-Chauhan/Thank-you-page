@@ -6,115 +6,120 @@
   <title>Thank You – Fund for Global Human Rights</title>
   <meta name="description" content="Thank you for supporting the Fund for Global Human Rights. Your generosity helps activists and defenders worldwide.">
   <style>
-    /* Body and layout */
+  /* Body and layout */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #005fa3;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /* Banner image */
+  header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Text content */
+  main {
+    max-width: 650px;
+    margin: 1rem auto;
+  }
+
+  h1 {
+    margin-top: 1.5rem;
+    font-size: 2.4rem;
+    color: #3B1F2B; /* darker plum */
+    border-bottom: 3px solid #F4B73F; /* gold accent underline */
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+
+  p {
+    margin-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  /* Orange button styling */
+  a.button {
+    display: inline-block;
+    background-color: #E87722; /* brand orange */
+    color: white;
+    padding: 0.85rem 1.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.75rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  a.button:hover {
+    background-color: #cf6a1d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  a.button:focus {
+    background-color: #cf6a1d;
+    outline: 3px solid #F4B73F; /* gold focus outline */
+    outline-offset: 3px;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background-color: #f9fafb;
-      color: #333;
-      text-align: center;
-      padding: 1rem;
+      justify-content: flex-start;
+      padding-top: 2rem;
     }
-
-    /* Skip link for accessibility */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #005fa3;
-      color: white;
-      padding: 8px;
-      z-index: 100;
-    }
-    .skip-link:focus {
-      top: 0;
-    }
-
-    /* Banner image */
     header img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      height: 200px;
     }
-/* Text content */
-main {
-  max-width: 650px;
-  margin: 1rem auto;
-}
-
-h1 {
-  margin-top: 1.5rem;
-  font-size: 2.4rem;
-  color: #3B1F2B; /* darker plum */
-  border-bottom: 3px solid #F4B73F; /* gold accent underline */
-  display: inline-block;
-  padding-bottom: 0.3rem;
-  letter-spacing: 0.5px;
-  font-weight: 700;
-}
-   
-
+    h1 {
+      font-size: 1.8rem;
+    }
     p {
-      margin-top: 1rem;
-      line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    a.button {
+      padding: 1rem 2rem;
       font-size: 1.1rem;
     }
+  }
 
-    /* Orange button styling */
-    a.button {
-      display: inline-block;
-      background-color: #FFA500; /* bright orange */
-      color: white;
-      padding: 0.85rem 1.75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 1.75rem;
-      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+  /* Smooth scrolling for skip link */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 
-    a.button:hover {
-      background-color: #e59400; /* darker orange */
-      transform: translateY(-2px);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    a.button:focus {
-      background-color: #e59400;
-      outline: 3px solid #FFD966; /* bright yellow outline */
-      outline-offset: 3px;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      body {
-        justify-content: flex-start;
-        padding-top: 2rem;
-      }
-      header img {
-        height: 200px;
-      }
-      h1 { font-size: 1.8rem; }
-      p { font-size: 1rem; line-height: 1.8; }
-      a.button {
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
-      }
-    }
-
-    /* Smooth scrolling for skip link */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
 
